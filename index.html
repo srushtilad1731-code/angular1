@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to My Github file</title>
+  <!-- Import AngularJS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  
+  <!-- CSS Style -->
+  <style>
+    h1 {
+      color: blue;   /* Change text color */
+      font-family: Arial, sans-serif; /* Change font */
+    }
+  </style>
+</head>
+<body ng-controller="MainController">
+
+  <h1>{{ message }}</h1>
+
+  <script>
+    var app = angular.module("myApp", []);
+    app.controller("MainController", function($scope) {
+      $scope.message = "Hello, AngularJS!";
+    });
+  </script>
+</body>
+</html>
+
